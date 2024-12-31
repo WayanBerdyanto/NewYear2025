@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy New Year 2025</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: black;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .countdown {
+        font-size: 6rem;
+        font-weight: bold;
+        margin-bottom: 2rem;
+      }
+
+      .firework {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background: #ff0;
+        border-radius: 50%;
+        animation: explode 1s ease-out forwards;
+      }
+
+      @keyframes explode {
+        0% {
+          transform: scale(1);
+          opacity: 1;
+        }
+        100% {
+          transform: scale(10);
+          opacity: 0;
+        }
+      }
+
+      .flower {
+        position: absolute;
+        bottom: 20px;
+        width: 100px;
+        height: auto;
+      }
+
+      #fireworks {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+      }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="countdown" class="countdown"></div>
+    <span id="great" class="countdown"></span>
+    <span id="attention"></span>
+    <div id="fireworks"></div>
+    <div id="fireworks-container"></div>
+    <!-- <button id="startFireworksBtn">Start Firework Show</button> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.39/Tone.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
