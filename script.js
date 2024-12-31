@@ -15,7 +15,7 @@ $(document).ready(function () {
       );
       const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-      $("#countdown").text(`${days}d ${hours}h ${minutes}m ${seconds}s`);
+      $("#countdown").text(`${hours}j ${minutes}m  ${seconds}s`);
 
       if (distance < 0) {
         clearInterval(countdownInterval);
